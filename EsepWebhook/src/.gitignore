@@ -1,0 +1,39 @@
+# Ignore AWS credentials
+*.aws/*
+.env
+
+# Ignore build/output directories
+bin/
+obj/
+build/
+dist/
+
+# User-specific files
+*.user
+*.vs/
+.vscode/
+*.suo
+
+# Logs and temp files
+*.log
+*.tmp
+
+# IDE settings
+.idea/
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Python cache (if using Python Lambda)
+__pycache__/
+*.pyc
+
+# Dotnet Lambda deployment zip
+*.zip
+
+# Ignore compiled artifacts
+*.dll
+*.exe
+*.pdb
