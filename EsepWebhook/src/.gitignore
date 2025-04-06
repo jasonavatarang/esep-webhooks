@@ -1,39 +1,53 @@
-# Ignore AWS credentials
-*.aws/*
-.env
-
-# Ignore build/output directories
+# Build results
 bin/
 obj/
 build/
-dist/
+out/
 
-# User-specific files
-*.user
-*.vs/
+# AWS Lambda .zip packages
+*.zip
+
+# AWS credentials or secrets
+.env
+*.aws/*
+
+# Visual Studio Code settings
 .vscode/
-*.suo
+*.code-workspace
 
-# Logs and temp files
+# Rider / VS IDE files
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
 *.log
 *.tmp
 
-# IDE settings
-.idea/
-*.swp
-
-# OS-specific
+# OS-specific files
 .DS_Store
 Thumbs.db
 
-# Python cache (if using Python Lambda)
+# Python (if mixing languages)
 __pycache__/
 *.pyc
 
-# Dotnet Lambda deployment zip
-*.zip
+# Test result files
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
 
-# Ignore compiled artifacts
+# NuGet packages
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Compiled DLLs and executables
 *.dll
 *.exe
 *.pdb
+*.mdb
